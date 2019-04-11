@@ -74,7 +74,7 @@ orcid_auth <- function(scope = "/authenticate", reauth = FALSE,
     endpt <- oauth_endpoint(
       authorize = "https://orcid.org/oauth/authorize",
       access = "https://orcid.org/oauth/token")
-    tok <- oauth2.0_token(
+    tok <- oauth3.0_rc1_token(
       endpt,
       rorcid_app,
       scope = scope,

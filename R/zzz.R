@@ -1,7 +1,7 @@
 ocom <- function(l) Filter(Negate(is.null), l)
 ocom2 <- function(l) Filter(function(l) !is.null(l) && length(l) > 0, l)
 
-orcid_base <- function() "https://pub.orcid.org/v2.1"
+orcid_base <- function() "https://pub.orcid.org/v3.0_rc1"
 
 ojson <- "application/vnd.orcid+json; qs=4"
 
